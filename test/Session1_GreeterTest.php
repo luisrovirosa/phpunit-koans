@@ -24,7 +24,7 @@ class Session1_GreeterTest extends \PHPUnit_Framework_TestCase
     function shouldIgnoreWhitespace()
     {
         $greeter = new Greeter();
-        // TODO check that "Hello Peter", $greeter->greet(" Peter ")
+        $this->assertEquals('Hello Peter', $greeter->greet(' Peter '));
     }
 
 }
