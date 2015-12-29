@@ -63,8 +63,8 @@ class Session2_WordCounterTest extends \PHPUnit_Framework_TestCase
     function shouldContainUniqueWord()
     {
         $counter = new WordCounter("green bar green hat");
-        // TODO check that "bar", $counter->uniqueWords() is contained in list
-        // TODO check that "foo", $counter->uniqueWords() is not contained in list
+        $this->assertContains('bar', $counter->uniqueWords());
+        $this->assertNotContains('foo', $counter->uniqueWords());
     }
 
     /** @test */
