@@ -1,7 +1,5 @@
 <?php
 
-require_once 'WordCounter.php';
-
 /**
  * Session 4: WordCounterTest - testing for Exceptions.
  * See https://phpunit.de/manual/current/en/writing-tests-for-phpunit.html#writing-tests-for-phpunit.exceptions

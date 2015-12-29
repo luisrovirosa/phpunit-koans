@@ -1,7 +1,5 @@
 <?php
 
-require_once 'WordCounter.php';
-
 /**
  * Session 2: WordCounterTest - All kind of assertions.
  * See https://phpunit.de/manual/current/en/appendixes.assertions.html

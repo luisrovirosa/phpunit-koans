@@ -1,7 +1,5 @@
 <?php
 
-require_once 'WordCounter.php';
-
 /**
  * Session 3: WordCounterFileTest - Fixtures, e.g. using a test file.
  * See https://phpunit.de/manual/current/en/fixtures.html

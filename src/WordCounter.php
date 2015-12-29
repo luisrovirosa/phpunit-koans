@@ -1,9 +1,5 @@
 <?php
 
-class FileNotFoundException extends Exception
-{
-}
-
 /**
  * Counts words of a text and provides basic analytics of that.
  */
