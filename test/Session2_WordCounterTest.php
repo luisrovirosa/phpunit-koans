@@ -78,7 +78,7 @@ class Session2_WordCounterTest extends \PHPUnit_Framework_TestCase
     function shouldReturnRatioOfWords()
     {
         $counter = new WordCounter("green bar green");
-        $this->assertEquals(0.33, round($counter->ratioOf('bar'), 2));
+        $this->assertEquals(0.33, $counter->ratioOf('bar'), '', 2);
     }
 
 }
