@@ -51,7 +51,7 @@ class Session3_WordCounterFileTest extends \PHPUnit_Framework_TestCase
     /** @test */
     function shouldVerifyContainmentOfWord()
     {
-        // $counter = WordCounter::fromFile(self::TEST_FILE);
-        // TODO check that $counter->containsWord("bar")
+        $counter = WordCounter::fromFile(self::TEST_FILE);
+        $this->assertTrue($counter->containsWord('bar'));
     }
 }
