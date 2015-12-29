@@ -21,7 +21,7 @@ class Session2_WordCounterTest extends \PHPUnit_Framework_TestCase
     function shouldVerifyContainmentOfWord()
     {
         $counter = new WordCounter("green bar green hat");
-        // TODO check that $counter->containsWord("bar")
+        $this->assertTrue($counter->containsWord('bar'));
     }
 
     /** @test */
