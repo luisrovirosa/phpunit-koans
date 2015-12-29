@@ -7,10 +7,12 @@ require_once 'WordCounter.php';
  * See https://phpunit.de/manual/current/en/fixtures.html
  * See https://phpunit.de/manual/current/en/appendixes.annotations.html
  */
-class Session3_WordCounterFileTest extends \PHPUnit_Framework_TestCase {
+class Session3_WordCounterFileTest extends \PHPUnit_Framework_TestCase
+{
 
     /** @test */
-    function shouldReturnCountOfWords() {
+    function shouldReturnCountOfWords()
+    {
         $file = "testfile.tmp";
         file_put_contents($file, "Keep the bar green to keep the code clean.");
 
@@ -24,28 +26,34 @@ class Session3_WordCounterFileTest extends \PHPUnit_Framework_TestCase {
     // better use Before/After hooks for test file handling
     // TODO add the needed annotations to the hook methods and then
     // TODO add the proper assertions to complete the tests
-    
+
     const TEST_FILE = "FileWordCounterTest.tmp";
 
     // TODO this needs to be called before each test
-    function createFreshTestFileForEachTest() {
-        file_put_contents(self::TEST_FILE,
-            "Keep the bar green to keep the code clean.");
+    function createFreshTestFileForEachTest()
+    {
+        file_put_contents(
+            self::TEST_FILE,
+            "Keep the bar green to keep the code clean."
+        );
     }
 
     // TODO this needs to be called after each test
-    function deleteTestFile() {
+    function deleteTestFile()
+    {
         $this->assertTrue(unlink(self::TEST_FILE));
     }
 
     /** @test */
-    function shouldReturnCountOfWordsBetter() {
+    function shouldReturnCountOfWordsBetter()
+    {
         // $counter = WordCounter::fromFile(self::TEST_FILE);
         // TODO check that 9, $counter->numberOfWords()
     }
 
     /** @test */
-    function shouldVerifyContainmentOfWord() {
+    function shouldVerifyContainmentOfWord()
+    {
         // $counter = WordCounter::fromFile(self::TEST_FILE);
         // TODO check that $counter->containsWord("bar")
     }

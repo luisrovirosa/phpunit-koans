@@ -7,16 +7,18 @@ require_once 'WordCounter.php';
  * See https://phpunit.de/manual/current/en/writing-tests-for-phpunit.html#writing-tests-for-phpunit.exceptions
  * See https://phpunit.de/manual/current/en/appendixes.annotations.html
  */
-class Session4_WordCounterFailureTest extends \PHPUnit_Framework_TestCase {
+class Session4_WordCounterFailureTest extends \PHPUnit_Framework_TestCase
+{
 
     // TODO add the needed code/annotations to test for an expected exception, then
     // TODO enable the tests to complete them
-    
+
     /**
      * @ test
      * TODO expect InvalidArgumentException
      */
-    function shouldThrowInvalidArgumentExceptionForUnknownWord() {
+    function shouldThrowInvalidArgumentExceptionForUnknownWord()
+    {
         $counter = new WordCounter("green bar green");
         $counter->ratioOf("missingWord");
     }
@@ -24,7 +26,8 @@ class Session4_WordCounterFailureTest extends \PHPUnit_Framework_TestCase {
     /**
      * @ test
      */
-    function shouldThrowInvalidArgumentExceptionAlternative() {
+    function shouldThrowInvalidArgumentExceptionAlternative()
+    {
         // TODO expect "InvalidArgumentException"
         $counter = new WordCounter("green bar green");
         $counter->ratioOf("anotherMissingWord");
@@ -35,7 +38,8 @@ class Session4_WordCounterFailureTest extends \PHPUnit_Framework_TestCase {
      * TODO expect FileNotFoundException
      * TODO expect message IamSureThisDoesNotExist.txt
      */
-    function shouldThrowExceptionWithFileNameOnMissingFile() {
+    function shouldThrowExceptionWithFileNameOnMissingFile()
+    {
         WordCounter::fromFile("IamSureThisDoesNotExist.txt");
     }
 
@@ -45,16 +49,18 @@ class Session4_WordCounterFailureTest extends \PHPUnit_Framework_TestCase {
     /**
      * @ test
      */
-    function shouldCountUniqueWordsCaseInsensitive() {
+    function shouldCountUniqueWordsCaseInsensitive()
+    {
         $counter = new WordCounter("green bar Green hat");
         // TODO mark test incomplete with "work in progress, will continue tomorrow"
-        $this->assertEquals([ "bar", "green", "hat" ], $counter->uniqueWords());
+        $this->assertEquals(["bar", "green", "hat"], $counter->uniqueWords());
     }
 
     /** @test */
-    function fakeTestForExerciseToAvoidPHPUnitWarning() {
-        $this->assertTrue(true);
+    function fakeTestForExerciseToAvoidPHPUnitWarning()
+    {
+        $this->assertTrue(TRUE);
         // TODO delete this test at the end
     }
-    
+
 }
