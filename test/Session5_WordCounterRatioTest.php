@@ -7,7 +7,6 @@
 class Session5_WordCounterRatioTest extends \PHPUnit_Framework_TestCase
 {
 
-    // we want to test more corner cases for the ratio, here is a table of test cases
     static function tableData()
     {
         return [
@@ -21,8 +20,8 @@ class Session5_WordCounterRatioTest extends \PHPUnit_Framework_TestCase
     // TODO add the needed code/annotations to run this test with all examples
 
     /**
-     * @ test
-     * TODO take data from tableData method
+     * @test
+     * @dataProvider tableData
      */
     function shouldReturnRatioOfGivenWord($sentence, $word, $expectedRratio)
     {
