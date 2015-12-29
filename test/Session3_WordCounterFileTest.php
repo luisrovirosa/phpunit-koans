@@ -44,8 +44,8 @@ class Session3_WordCounterFileTest extends \PHPUnit_Framework_TestCase
     /** @test */
     function shouldReturnCountOfWordsBetter()
     {
-        // $counter = WordCounter::fromFile(self::TEST_FILE);
-        // TODO check that 9, $counter->numberOfWords()
+        $counter = WordCounter::fromFile(self::TEST_FILE);
+        $this->assertEquals(9, $counter->numberOfWords());
     }
 
     /** @test */
