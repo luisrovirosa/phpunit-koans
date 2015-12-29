@@ -14,7 +14,7 @@ class Session2_WordCounterTest extends \PHPUnit_Framework_TestCase
     function shouldCountNumberOfWords()
     {
         $counter = new WordCounter("Keep the bar green to keep the code clean.");
-        // TODO check that 9, $counter->numberOfWords()
+        $this->assertEquals(9, $counter->numberOfWords());
     }
 
     /** @test */
