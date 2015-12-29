@@ -78,8 +78,7 @@ class Session2_WordCounterTest extends \PHPUnit_Framework_TestCase
     function shouldReturnRatioOfWords()
     {
         $counter = new WordCounter("green bar green");
-        // TODO check that 0.33, $counter->ratioOf("bar")
-        // note that floating point numbers have accuracy delta 0.01
+        $this->assertEquals(0.33, round($counter->ratioOf('bar'), 2));
     }
 
 }
