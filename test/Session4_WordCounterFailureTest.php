@@ -22,11 +22,11 @@ class Session4_WordCounterFailureTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @ test
+     * @test
      */
     function shouldThrowInvalidArgumentExceptionAlternative()
     {
-        // TODO expect "InvalidArgumentException"
+        $this->setExpectedException('InvalidArgumentException');
         $counter = new WordCounter("green bar green");
         $counter->ratioOf("anotherMissingWord");
     }
