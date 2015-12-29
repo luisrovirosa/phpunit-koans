@@ -12,8 +12,8 @@ class Session4_WordCounterFailureTest extends \PHPUnit_Framework_TestCase
     // TODO enable the tests to complete them
 
     /**
-     * @ test
-     * TODO expect InvalidArgumentException
+     * @test
+     * @expectedException InvalidArgumentException
      */
     function shouldThrowInvalidArgumentExceptionForUnknownWord()
     {
