@@ -20,14 +20,11 @@ class Session3_WordCounterFileTest extends \PHPUnit_Framework_TestCase
         unlink($file);
     }
 
-    // the problem is that unlink is not called in case of test failure,
-    // better use Before/After hooks for test file handling
-    // TODO add the needed annotations to the hook methods and then
-    // TODO add the proper assertions to complete the tests
-
     const TEST_FILE = "FileWordCounterTest.tmp";
 
-    // TODO this needs to be called before each test
+    /**
+     * @before
+     */
     function createFreshTestFileForEachTest()
     {
         file_put_contents(
@@ -36,7 +33,9 @@ class Session3_WordCounterFileTest extends \PHPUnit_Framework_TestCase
         );
     }
 
-    // TODO this needs to be called after each test
+    /**
+     * @after
+     */
     function deleteTestFile()
     {
         $this->assertTrue(unlink(self::TEST_FILE));
