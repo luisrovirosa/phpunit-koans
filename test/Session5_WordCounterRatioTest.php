@@ -17,8 +17,6 @@ class Session5_WordCounterRatioTest extends \PHPUnit_Framework_TestCase
         ];
     }
 
-    // TODO add the needed code/annotations to run this test with all examples
-
     /**
      * @test
      * @dataProvider tableData
@@ -29,9 +27,4 @@ class Session5_WordCounterRatioTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals($expectedRratio, $counter->ratioOf($word), '', 0.01);
     }
 
-    /** @test */
-    function fakeTestForExerciseToAvoidPHPUnitWarning()
-    {
-        // TODO delete this test at the end
-    }
 }
