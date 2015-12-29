@@ -10,7 +10,7 @@ class Session1_GreeterTest extends \PHPUnit_Framework_TestCase
     function shouldReturnHelloName()
     {
         $greeter = new Greeter();
-        // TODO check that "Hello Peter", $greeter->greet("Peter")
+        $this->assertEquals('Hello Peter', $greeter->greet('Peter'));
     }
 
     /** @test */
