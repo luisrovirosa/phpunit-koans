@@ -35,7 +35,7 @@ class Session2_WordCounterTest extends \PHPUnit_Framework_TestCase
     function shouldReturnNullForUnknownWordCount()
     {
         $counter = new WordCounter("green bar green hat");
-        // TODO check that $counter->countOf("else") is null
+        $this->assertNull($counter->countOf('else'));
     }
 
     /** @test */
