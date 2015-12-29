@@ -17,7 +17,7 @@ class Session1_GreeterTest extends \PHPUnit_Framework_TestCase
     function shouldReturnHelloForNull()
     {
         $greeter = new Greeter();
-        // TODO check that "Hello", $greeter->greet(null)
+        $this->assertEquals('Hello', $greeter->greet(null));
     }
 
     /** @test */
