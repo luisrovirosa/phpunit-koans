@@ -42,7 +42,7 @@ class Session2_WordCounterTest extends \PHPUnit_Framework_TestCase
     function shouldReturnNotNullWordCountForExistingWord()
     {
         $counter = new WordCounter("green bar green hat");
-        // TODO check that $counter->countOf("green") is not null
+        $this->assertNotNull($counter->countOf('green'));
     }
 
     /** @test */
