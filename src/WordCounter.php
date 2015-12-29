@@ -29,7 +29,7 @@ class WordCounter
     }
 
     /**
-     * @return unique words sorted alphabetically.
+     * @return array unique words sorted alphabetically.
      */
     function uniqueWords()
     {
@@ -61,7 +61,7 @@ class WordCounter
     }
 
     /**
-     * @return ratio of this word's occurance against all words.
+     * @return float ratio of this word's occurance against all words.
      */
     function ratioOf($word)
     {
