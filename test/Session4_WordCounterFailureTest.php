@@ -32,9 +32,9 @@ class Session4_WordCounterFailureTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @ test
-     * TODO expect FileNotFoundException
-     * TODO expect message IamSureThisDoesNotExist.txt
+     * @test
+     * @expectedException FileNotFoundException
+     * @expectedExceptionMessage IamSureThisDoesNotExist.txt
      */
     function shouldThrowExceptionWithFileNameOnMissingFile()
     {
