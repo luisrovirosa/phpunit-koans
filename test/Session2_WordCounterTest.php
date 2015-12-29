@@ -49,7 +49,7 @@ class Session2_WordCounterTest extends \PHPUnit_Framework_TestCase
     function shouldCountGreenTwice()
     {
         $counter = new WordCounter("green bar green hat");
-        // TODO check that 2, $counter->countOf("green")
+        $this->assertEquals(2, $counter->countOf('green'));
     }
 
     /** @test */
