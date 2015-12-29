@@ -71,7 +71,7 @@ class Session2_WordCounterTest extends \PHPUnit_Framework_TestCase
     function shouldFindNumberOfUniqueWords()
     {
         $counter = new WordCounter("green bar green hat");
-        // TODO check that 3, $counter->uniqueWords()
+        $this->assertCount(3, $counter->uniqueWords());
     }
 
     /** @test */
