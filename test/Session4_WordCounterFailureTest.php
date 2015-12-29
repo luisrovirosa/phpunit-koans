@@ -8,9 +8,6 @@
 class Session4_WordCounterFailureTest extends \PHPUnit_Framework_TestCase
 {
 
-    // TODO add the needed code/annotations to test for an expected exception, then
-    // TODO enable the tests to complete them
-
     /**
      * @test
      * @expectedException InvalidArgumentException
@@ -49,12 +46,6 @@ class Session4_WordCounterFailureTest extends \PHPUnit_Framework_TestCase
         $this->markTestIncomplete('work in progress, will continue tomorrow');
         $counter = new WordCounter("green bar Green hat");
         $this->assertEquals(["bar", "green", "hat"], $counter->uniqueWords());
-    }
-
-    /** @test */
-    function fakeTestForExerciseToAvoidPHPUnitWarning()
-    {
-        // TODO delete this test at the end
     }
 
 }
