@@ -41,16 +41,13 @@ class Session4_WordCounterFailureTest extends \PHPUnit_Framework_TestCase
         WordCounter::fromFile("IamSureThisDoesNotExist.txt");
     }
 
-    // the next test does not work, we need to change the code,
-    // but we will do that tomorrow. for today ignore it
-
     /**
-     * @ test
+     * @test
      */
     function shouldCountUniqueWordsCaseInsensitive()
     {
+        $this->markTestIncomplete('work in progress, will continue tomorrow');
         $counter = new WordCounter("green bar Green hat");
-        // TODO mark test incomplete with "work in progress, will continue tomorrow"
         $this->assertEquals(["bar", "green", "hat"], $counter->uniqueWords());
     }
 

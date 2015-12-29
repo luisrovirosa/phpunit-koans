@@ -8,7 +8,7 @@
          beStrictAboutOutputDuringTests="true"
          beStrictAboutTestSize="true"
          beStrictAboutTodoAnnotatedTests="true"
-         verbose="true">
+         verbose="false">
 
     <testsuites>
         <testsuite name="All Tests">
