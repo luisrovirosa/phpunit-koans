@@ -57,7 +57,6 @@ class Session4_WordCounterFailureTest extends \PHPUnit_Framework_TestCase
     /** @test */
     function fakeTestForExerciseToAvoidPHPUnitWarning()
     {
-        $this->assertTrue(TRUE);
         // TODO delete this test at the end
     }
 

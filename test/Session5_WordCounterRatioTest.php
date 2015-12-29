@@ -33,7 +33,6 @@ class Session5_WordCounterRatioTest extends \PHPUnit_Framework_TestCase
     /** @test */
     function fakeTestForExerciseToAvoidPHPUnitWarning()
     {
-        $this->assertTrue(true);
         // TODO delete this test at the end
     }
 }
